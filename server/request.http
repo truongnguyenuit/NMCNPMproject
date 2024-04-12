@@ -1,0 +1,180 @@
+
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "account" : "staff7",
+  "password" : "kkkkkk",
+  "fullname" : "truiongvip",
+  "address": "Sai gon",
+  "sex": "Nam",
+  "birthday": "01/11",
+  "email" : "truong2@gmail.com",
+  "telephoneNumber": "0987980987",
+  "avatarUrl": "https://vn.blog.kkday.com/wp-content/uploads/chup-anh-dep-bang-dien-thoai-25.jpg"
+}
+### 
+POST http://localhost:5001/api/auth/login
+Content-Type:  application/json
+
+{
+  "account": "admin1",
+  "password": "kkkkkk2"
+}
+###
+PUT http://localhost:5001/api/auth/changePassword
+Content-Type:  application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDc1NzhkYjcyOWQ5ZGQ5MzZhZWFkOTkiLCJpYXQiOjE2ODc2MTMzNjN9.2gZV3qibT2fUfYoN2Z8lfQtDa3STKoNcIYBZSZOQ00k
+
+{
+  "oldPassword": "kkkkkk1",
+  "newPassword": "kkkkkk2",
+  "confirmPassword": "kkkkkk2"
+}
+###
+GET  http://localhost:5000/api/auth/getAllStaffs
+Content-Type:  application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDU3MTljYzg2NjAyMTY2MDU5MjgzOGQiLCJpYXQiOjE2ODM0MzIxODh9.0pH2sC8WHRyJuJwEiCR5Hhu0RGhkF63eh9GRkA0UJzg
+###
+PUT  http://localhost:5001/api/auth/update/6496b39f5a9b799cf2d50e43
+Content-Type:  application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDU3MTljYzg2NjAyMTY2MDU5MjgzOGQiLCJpYXQiOjE2ODM0MzIxODh9.0pH2sC8WHRyJuJwEiCR5Hhu0RGhkF63eh9GRkA0UJzg
+
+{
+  "account": "thanhphuong",
+  "fullname": "Thanh Phượng",
+  "address": "Quận 10",
+  "sex": "Nữ", 
+  "birthDay": "05/11/2003", 
+  "email": "thanhphuong@gmail.com",
+  "telephoneNumber": "0956238574",
+  "img": "http://res.cloudinary.com/ltbichtram/image/upload/v1687597973/nhapmoncongnghephanmem/ly8rkdj6wewrsvga9slj.jpg"
+}
+###
+DELETE  http://localhost:5000/api/auth/delete/64630f8268c4ec656abd1959
+Content-Type:  application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDU3MTljYzg2NjAyMTY2MDU5MjgzOGQiLCJpYXQiOjE2ODM0MzIxODh9.0pH2sC8WHRyJuJwEiCR5Hhu0RGhkF63eh9GRkA0UJzg
+
+###
+GET  http://localhost:5000/api/auth/search/012
+Content-Type:  application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDU3MTljYzg2NjAyMTY2MDU5MjgzOGQiLCJpYXQiOjE2ODM0MzIxODh9.0pH2sC8WHRyJuJwEiCR5Hhu0RGhkF63eh9GRkA0UJzg
+
+###
+POST http://localhost:5001/api/customer
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDU3MTljYzg2NjAyMTY2MDU5MjgzOGQiLCJpYXQiOjE2ODM0MzIxODh9.0pH2sC8WHRyJuJwEiCR5Hhu0RGhkF63eh9GRkA0UJzg
+
+{
+  "name": " Xuân Trường6",
+  "img": "https://static-images.vnncdn.net/files/publish/2022/9/3/bien-vo-cuc-thai-binh-346.jpeg",
+  "telephoneNumber": "0987236487",
+  "address": "Sài Gòn"
+}
+###
+PUT http://localhost:5000/api/customer/645723267ca07cc1fa0d6e1d
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDU3MTljYzg2NjAyMTY2MDU5MjgzOGQiLCJpYXQiOjE2ODM0MzIxODh9.0pH2sC8WHRyJuJwEiCR5Hhu0RGhkF63eh9GRkA0UJzg
+
+{
+  "name": "khachhang123",
+  "email": "email",
+  "img": "img",
+  "telephoneNumber": "123",
+  "address": "address"
+}
+###
+GET http://localhost:5001/api/customer/GetAllCustomer
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDU3MTljYzg2NjAyMTY2MDU5MjgzOGQiLCJpYXQiOjE2ODM0MzIxODh9.0pH2sC8WHRyJuJwEiCR5Hhu0RGhkF63eh9GRkA0UJzg
+###
+// LƯU Ý: Nhập tên có dấu đầy đủ hoặc một chữ cái sẽ search ra, nhập tên không dấu sẽ không tìm được
+GET http://localhost:5001/api/customer/search/Hải
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDU3MTljYzg2NjAyMTY2MDU5MjgzOGQiLCJpYXQiOjE2ODM0MzIxODh9.0pH2sC8WHRyJuJwEiCR5Hhu0RGhkF63eh9GRkA0UJzg
+###
+GET http://localhost:5001/api/customer/highPoint
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDU3MTljYzg2NjAyMTY2MDU5MjgzOGQiLCJpYXQiOjE2ODM0MzIxODh9.0pH2sC8WHRyJuJwEiCR5Hhu0RGhkF63eh9GRkA0UJzg
+
+###
+
+POST http://localhost:5000/api/product
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDU3MTljYzg2NjAyMTY2MDU5MjgzOGQiLCJpYXQiOjE2ODM0MzIxODh9.0pH2sC8WHRyJuJwEiCR5Hhu0RGhkF63eh9GRkA0UJzg
+
+{
+  "name": "Hồng Ngọcc",
+  "amount": 20,
+  "originPrice": 1000000,
+  "costPrice": 5000,
+  "salePrice": 5000,
+  "discount": 20
+} 
+###
+PUT http://localhost:5000/api/product/647431fc0a7f277d8dc5c2b5
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDU3MTljYzg2NjAyMTY2MDU5MjgzOGQiLCJpYXQiOjE2ODM0MzIxODh9.0pH2sC8WHRyJuJwEiCR5Hhu0RGhkF63eh9GRkA0UJzg
+
+{
+  "name": "Trân Châu",
+  "amount": 10,
+  "originPrice": 1000000,
+  "costPrice": 5000,
+  "salePrice": 5000,
+  "discount": 20,
+  "img": "https://vangcuulong.vn/multidata/ban-biet-gi-ve-ngoc-trai-1.jpg"
+} 
+###
+GET http://localhost:5001/api/product/products
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDU3MTljYzg2NjAyMTY2MDU5MjgzOGQiLCJpYXQiOjE2ODM0MzIxODh9.0pH2sC8WHRyJuJwEiCR5Hhu0RGhkF63eh9GRkA0UJzg
+###
+DELETE http://localhost:5000/api/product/64744d980a7f277d8dc5c2bc
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDU3MTljYzg2NjAyMTY2MDU5MjgzOGQiLCJpYXQiOjE2ODM0MzIxODh9.0pH2sC8WHRyJuJwEiCR5Hhu0RGhkF63eh9GRkA0UJzg
+###
+GET http://localhost:5001/api/product/search/a
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDU3MTljYzg2NjAyMTY2MDU5MjgzOGQiLCJpYXQiOjE2ODM0MzIxODh9.0pH2sC8WHRyJuJwEiCR5Hhu0RGhkF63eh9GRkA0UJzg
+###
+//mô tả: api thêm biên lai, các thuộc tính như bên dưới
+POST http://localhost:5001/api/sale
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDU3MTljYzg2NjAyMTY2MDU5MjgzOGQiLCJpYXQiOjE2ODM0MzIxODh9.0pH2sC8WHRyJuJwEiCR5Hhu0RGhkF63eh9GRkA0UJzg
+
+{
+  "account": "64630f7968c4ec656abd1953",
+  "customer": "64620e897c2927612ff93e56",
+  "subTotal": 1000000,
+  "discount": 5000,
+  "orderTotal": 500,
+  "point": 30,
+  "orderDetails": [
+    {
+      "product": "648404196e5a8e7acc40bb71",
+      "amount" : 30
+    }, 
+    {
+      "product": "648404196e5a8e7acc40bb71",
+      "amount" : 30
+    } 
+  ]
+} 
+###
+//mô tả: api lấy tất cả các biên lai của 1 khách hàng nhất định, param cần phải đính kèm ID của customer
+GET http://localhost:5001/api/sale/64620e897c2927612ff93e56
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDU3MTljYzg2NjAyMTY2MDU5MjgzOGQiLCJpYXQiOjE2ODM0MzIxODh9.0pH2sC8WHRyJuJwEiCR5Hhu0RGhkF63eh9GRkA0UJzg
+
+###
+//mô tả: api xóa biên lai, param cần đính kèm ID của biên lai
+DELETE http://localhost:5000/api/sale/6487ed368080542a5098be74
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDU3MTljYzg2NjAyMTY2MDU5MjgzOGQiLCJpYXQiOjE2ODM0MzIxODh9.0pH2sC8WHRyJuJwEiCR5Hhu0RGhkF63eh9GRkA0UJzg
+###
+//mô tả: api lấy tất cả các biên lai 
+GET http://localhost:5001/api/sale/orders
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDU3MTljYzg2NjAyMTY2MDU5MjgzOGQiLCJpYXQiOjE2ODM0MzIxODh9.0pH2sC8WHRyJuJwEiCR5Hhu0RGhkF63eh9GRkA0UJzg
+###

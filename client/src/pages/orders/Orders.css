@@ -1,0 +1,81 @@
+#order-table {
+    width: 100%;
+    max-height: 250px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    border-spacing: 0;
+    animation: fade-in-top 1.5s;
+  }
+  #order-table th:first-child {
+    border-top-left-radius: 5px;
+  }
+  #order-table th:last-child {
+    border-top-right-radius: 5px;
+  }
+  #order-table th,
+  #order-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 16px;
+    user-select: none;
+  }
+  #order-table tbody {
+    background-color: #fff;
+  }
+  #order-table tr {
+    cursor: pointer;
+  }
+  #order-table tr:nth-child(even) {
+    background-color: #ffeedf;
+  }
+  
+  #order-table tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  #order-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-image: -webkit-linear-gradient(90deg, #fd501b, #ff861a);
+    color: white;
+  }
+  #order-table td:first-child,
+  #order-table th:first-child {
+    width: 100px;
+  }
+  #order-table td:nth-child(2),
+  #order-table th:nth-child(2) {
+    width: 100px;
+  }
+  #order-table td:nth-child(3),
+  #order-table th:nth-child(3) {
+    width: 160px;
+  }
+  #order-table td:nth-child(4),
+  #order-table th:nth-child(4) {
+    width: 160px;
+  }
+  #order-table td:nth-child(5),
+  #order-table th:nth-child(5) {
+    width: 130px;
+  }
+  #order-table td:nth-child(6),
+  #order-table th:nth-child(6) {
+    width: 170px;
+  }
+  
+  .card_value-item > span {
+    padding: 0;
+  }
+  
+  label+.css-1aa5qj0-MuiInputBase-root-MuiInput-root {
+      margin:0 !important;
+  }
+  
+  .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root.Mui-error,
+  .css-z5e0z9-MuiFormLabel-root-MuiInputLabel-root.Mui-error {
+    color: #fd501b !important;
+    position: absolute;
+    top: -15px;
+  }
+  

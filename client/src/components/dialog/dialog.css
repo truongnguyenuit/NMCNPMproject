@@ -1,0 +1,80 @@
+.dialog-container {
+  border-radius: 10px;
+  width: 35%;
+  background-color: #fff;
+}
+.dialog-heading {
+  background-color: #f0f4f8;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 18px;
+  border-bottom: 1px solid #c6d1db;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dialog-x {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+
+.dialog-x:hover {
+  background-color: rgb(255, 227, 209);
+  transform: rotate(90deg);
+  transition: .2s linear;
+}
+
+.dialog-heading > h3 {
+  font-size: 18px;
+  font-weight: 450;
+}
+.dialog-body {
+  padding: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #c6d1db;
+}
+.dialog-body > p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.dialog-footer {
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dialog-btn-ok {
+  font-weight: bold;
+  background-color: #fc8b2f ;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.dialog-btn-ok:hover {
+  background-color: #fd501b;
+}
+
+.dialog-btn-cancel {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  background-color: #a0a2a3;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.dialog-btn-cancel:hover {
+  background-color: #777777;
+}
+
+
